@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Container from 'react-bootstrap/Container';
+import DataProvider from "./DataProvider"
+import Table from "./Table"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>Statistiques des saisines du CDJM</h1>
       </header>
+      <main>
+        <Container className="p-3">
+          <DataProvider>
+            <Table/>
+          </DataProvider>
+        </Container>
+      </main>
     </div>
   );
 }
