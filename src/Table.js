@@ -79,7 +79,7 @@ export default function Table() {
                                 <td>{ avis.medium }</td>
                                 <td>
                                     <ExternalLink href={ `https://cdjm.org/avis-${avis.id}/` }>
-                                        { avis.topic }
+                                        { avis.topic || "Non renseigné" }
                                     </ExternalLink>
                                 </td>
                                 <td>{ avis.status }</td>
