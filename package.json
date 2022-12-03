@@ -2,6 +2,7 @@
   "name": "cdjm-referrals",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yannickbochatay.github.io/cdjm-referrals/build/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
