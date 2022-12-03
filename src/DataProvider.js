@@ -5,7 +5,7 @@ export const DataContext = createContext("datacontext")
 const defaultFilters = {
     filters : { status : [] },
     orderBy : "date_decision",
-    orderDirection : 1,
+    orderDirection : -1,
     groupBy : null
 }
 
