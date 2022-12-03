@@ -1,5 +1,6 @@
-import Twitter from "./Twitter";
+import Twitter from "./Twitter"
 import Mastodon from "./Mastodon"
+import Github from "./Github"
 
 export default function SocialNetworks() {
     return (
@@ -7,6 +8,8 @@ export default function SocialNetworks() {
             <Mastodon/>
             &nbsp;
             <Twitter/>
+            &nbsp;
+            <Github/>
         </div>
     )
 }
