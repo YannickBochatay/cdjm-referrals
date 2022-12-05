@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import objectData from "./cdjm-data.json"
 
 export const DataContext = createContext("datacontext")
 
@@ -26,8 +27,8 @@ export default function Data({ children }) {
 
     useEffect(() => {
         const fetchData = async() => {
-            const res = await fetch("https://yannguegan.pythonanywhere.com/data/dzc/cdjm-data.json")
-            const objectData = await res.json()
+            /* const res = await fetch("https://yannguegan.pythonanywhere.com/data/dzc/cdjm-data.json")
+            const objectData = await res.json() */
             setData(normalizeData(objectData))
         }
         fetchData()
